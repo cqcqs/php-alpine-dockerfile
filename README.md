@@ -1,2 +1,13 @@
 # docker-alpine-php
-Alpine3下的PHP环境Docker镜像
+基于 `Alpine3` 的 `PHP7.4` 镜像
+
+## 目录
+
+- **alpine** 基于 `alpine`
+- **php-alpine** 基于 `php:7.4-fpm-alpine`
+
+## 使用
+
+```bash
+docker build -t php74-fpm:1.0 .
+```
