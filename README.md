@@ -9,5 +9,15 @@
 ## 使用
 
 ```bash
-docker build -t php74-fpm:1.0 .
+docker build -t php74-fpm:1.0-alpine .
 ```
+
+**推荐使用阿里云镜像：**
+
+```bash
+docker pull registry.cn-hangzhou.aliyuncs.com/cqcqs/php74-fpm:1.0-alpine
+```
+
+## 链接
+
+> [php-dockerfile](https://github.com/cqcqs/php-dockerfile)
