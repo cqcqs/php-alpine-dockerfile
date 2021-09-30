@@ -72,14 +72,8 @@ RUN php -r "copy('https://install.phpcomposer.com/installer', 'composer-setup.ph
     docker-php-ext-configure gd --with-freetype=/usr/include/ --with-jpeg=/usr/include/ && \
     docker-php-ext-install -j$(nproc) gd && \
 
-    # Timezone
-    # cp /usr/share/zoneinfo/${TIMEZONE} /etc/localtime && \
-    # echo "${TIMEZONE}" > /etc/timezone && \
-    # echo "[Date]\ndate.timezone=${TIMEZONE}" > /usr/local/etc/php/conf.d/timezone.ini && \
-    # apk del tzdata && \
-
     # Clean
-    apk cache && apk del && rm -rf /var/cache/apk/*
+    apk del && rm -rf /var/cache/apk/*
 
 ADD . /var/www/html
 
